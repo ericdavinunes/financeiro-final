@@ -116,7 +116,7 @@ http://localhost:3000/swagger
 
 4. Acesse no navegador:
    ```
-   http://localhost:5173
+   http://localhost:3000
    ```
 
 ---
