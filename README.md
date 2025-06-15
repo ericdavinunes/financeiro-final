@@ -33,7 +33,7 @@ financeiro-final/
 │   ├── models/
 │   ├── docs/
 │   │   └── swagger.json
-│   └── database/ (se houver)
+│   └── database/db.js
 │
 ├── frontend/
 │   ├── public/
