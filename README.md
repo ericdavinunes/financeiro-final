@@ -1,69 +1,154 @@
 # 💰 Financeiro Pessoal
 
-Projeto de controle financeiro pessoal com funcionalidades básicas para registrar entradas e saídas, calcular saldo e visualizar o histórico. Desenvolvido com **React + Vite**, utilizando dados simulados localmente.
+Projeto completo de controle financeiro pessoal, com **frontend em React + Vite** e **backend em Node.js + Express**, permitindo registrar entradas e saídas, calcular saldo e visualizar o histórico com persistência real dos dados.
 
+---
 
 ## 🚀 Funcionalidades
 
-- ✅ CRUD de lançamentos (simulado)
+### 🔧 Backend (Node.js + Express)
+- ✅ CRUD de transações financeiras
+- ✅ Persistência de dados com banco de dados
+- ✅ API RESTful estruturada no padrão MVC
+- ✅ Documentação com Swagger UI
+- ✅ Integração com o frontend
+
+### 💻 Frontend (React + Vite)
 - ✅ Visualização de Entradas e Saídas
 - ✅ Cálculo automático do saldo total
+- ✅ CRUD de lançamentos (comunicação com API)
 - ✅ Navegação entre seções
-- ✅ Estilização com CSS moderno
-- ✅ Componentes reutilizáveis
-- ✅ Organização em páginas, componentes e assets
+- ✅ Componentes reutilizáveis e CSS moderno
 
+---
 
-## 📁 Estrutura de Pastas
+## 📂 Estrutura do Projeto
 
-financeiro-pessoal/
+```
+financeiro-final/
+├── backend/
+│   ├── app.js
+│   ├── routes/
+│   ├── controllers/
+│   ├── models/
+│   ├── docs/
+│   │   └── swagger.json
+│   └── database/ (se houver)
 │
-├── public/
-│ └── index.html
-│
-├── src/
-│ ├── data/
-│ │ └── transactions.json
-│ ├── pages/
-│ │ ├── Dashboard.jsx
-│ │ ├── Entradas.jsx
-│ │ └── Saidas.jsx
-│ ├── App.jsx
-│ ├── App.css
-│ ├── main.jsx
-│ └── index.css
-│
-├── package.json
-└── vite.config.js
+├── frontend/
+│   ├── public/
+│   ├── src/
+│   │   ├── data/
+│   │   ├── pages/
+│   │   ├── components/
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│   ├── index.html
+│   ├── package.json
+│   └── vite.config.js
+```
 
+---
 
-## 🧑‍💻 Tecnologias Utilizadas
+## 🧪 Documentação da API (Swagger)
 
+A documentação da API está disponível via Swagger UI:
+
+```
+http://localhost:3000/swagger
+```
+
+- Interativo e fácil de testar os endpoints
+- Baseado no padrão OpenAPI 2.0
+- Endpoints disponíveis:
+  - `GET /transacoes` – Listar transações
+  - `POST /transacoes` – Criar nova transação
+  - `DELETE /transacoes/{id}` – Excluir por ID
+
+---
+
+## 🛠️ Como rodar o projeto
+
+### 🔁 Backend
+
+1. Acesse a pasta do backend:
+   ```bash
+   cd backend
+   ```
+
+2. Instale as dependências:
+   ```bash
+   npm install
+   ```
+
+3. Inicie o servidor:
+   ```bash
+   node app.js
+   ```
+
+4. Acesse a API em:
+   ```
+   http://localhost:3000/api/transacoes
+   ```
+   E a documentação:
+   ```
+   http://localhost:3000/swagger
+   ```
+
+---
+
+### 🖥️ Frontend
+
+1. Em outro terminal, vá até a pasta do frontend:
+   ```bash
+   cd frontend
+   ```
+
+2. Instale as dependências:
+   ```bash
+   npm install
+   ```
+
+3. Inicie o servidor de desenvolvimento:
+   ```bash
+   npm run dev
+   ```
+
+4. Acesse no navegador:
+   ```
+   http://localhost:5173
+   ```
+
+---
+
+## 🔗 Tecnologias Utilizadas
+
+### Backend
+- Node.js
+- Express
+- Swagger UI
+- JavaScript
+- SQLite ou outro banco configurado
+
+### Frontend
 - React
 - Vite
 - JavaScript (ES6+)
 - CSS3
 
+---
 
-## 🛠️ Como rodar o projeto
+## 🤝 Colaboradores
 
-1. Clone o repositório ou extraia o .zip
-2. No terminal, vá até a pasta do projeto:
-   ```bash
-   cd financeiro-pessoal
+Projeto desenvolvido por:
 
-3. Instale as dependências:
-npm install
+- Éric Davi Nunes  
+- Eduardo Domingues  
+- Débora Lima  
+- Matheus Castro  
 
-4. Inicie o servidor de desenvolvimento:
-npm run dev
+🎓 Projeto acadêmico para fins de estudo.
 
-5. Acesse no navegador:
-http://localhost:5173
+📧 **Contato:** eric.sousa@maisunifacisa.com.br
 
-
-## ✍️ Autor
-
-Feito por Éric Davi Nunes, Eduardo Domingues, Débora Lima e Matheus Castro como projeto para fins de estudo.
-
-📧 Contato: eric.sousa@maisunifacisa.com.br
+---
